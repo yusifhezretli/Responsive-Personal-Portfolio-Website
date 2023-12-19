@@ -902,10 +902,20 @@ p {
 }
 
 .webb {
-    width: 95%;
+    width: 100%;
+   height: 240px;
+ 
+ }
+
+ @media screen and (max-width: 1300px){
+
+    .webb {
+       
+       height: auto;
+     
+     }
 
 }
-
 @media screen and (max-width: 992px) {
     .blog_wrap-container {
         grid-template-columns: repeat(2, 1fr);
@@ -919,21 +929,20 @@ p {
 
     }
 
-    .webb {
-        width: 100% !important;
-
-    }
 }
-
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 762px) {
     .blog_wrap-container {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .blog_filters li {
+    .blog_item li{
         font-size: 16px;
     }
+    .webb {
+        max-width: 100%;
+    height: auto;
 
+    }
 }
 
 /* testmisonal */

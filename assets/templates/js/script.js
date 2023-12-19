@@ -94,13 +94,24 @@ tabs.forEach((tab) => {
 
 let filterItems = document.querySelectorAll('.blog_filters li');
 
+filterItems.forEach((el) => {
+    el.addEventListener('click', () => {
+
+        filterItems.forEach((b) => b.classList.remove('filter_active'));
+
+        el.classList.add('filter_active');
+
+    });
+});
+
+
 function activeBlog(event) {
 
     filterItems.forEach(el => {
-        el.classList.remove('filter-active');
+        el.classList.remove('filter_active');
 
     });
-event.target.classList.add('filter-active');
+event.target.classList.add('filter_active');
 
 
 }
