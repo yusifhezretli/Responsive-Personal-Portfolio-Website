@@ -976,6 +976,7 @@ p {
     border-radius: 50%;
     margin-bottom: 20px;
     object-fit: cover;
+    z-index: 1000;
 }
 
 .img_name .name {
